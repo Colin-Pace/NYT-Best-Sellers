@@ -100,7 +100,7 @@ export default class Panel extends React.Component {
         
         return (
             <div id = "panel">
-                <h1 id = "title"><a id = "titleID" href = "https://colin-pace.github.io/NYT-books-application/">The New York Times Best Sellers</a></h1>
+                <h1 id = "title"><a id = "titleID" href = "https://colin-pace.github.io/NYT-Best-Sellers/">The New York Times Best Sellers</a></h1>
                 <h2 id = "subtitle">Authoritatively ranked lists of books sold in the United States, sorted by format and genre.</h2>
 
                 <div id = "formBar">
