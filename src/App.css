@@ -1,0 +1,410 @@
+body {
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+
+  width: 100%;
+  height: 100%;
+}
+
+#panel {
+  margin: 0px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid black;
+}
+
+
+#title {
+  font-family: Times, Times New Roman, Georgia, serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+#titleID {
+  padding-top: 0px;
+}
+
+#subtitle {
+  margin: 0;
+  font-weight: 540;
+  color: rgb(100, 98, 98);
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+
+#formBar {
+  margin-top: 35px;
+  border-top: 1px solid gray;
+}
+
+select {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding:5px 3px;
+}
+
+.line {
+  color: rgb(100, 98, 98);
+}
+
+#dateNav {
+  padding-top: 6px;
+  padding-left: 100px;
+}
+
+#leftNav {
+  padding-right: 15px;
+}
+
+#rightNav {
+  padding-left: 15px;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+.genreTitle {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.cardContainer {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgb(199, 194, 194);
+}
+
+#moreMenu {
+  border-right: none;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input, label {
+  margin: .4rem 0;
+}
+
+#formBar {
+  display: flex;
+  flex-direction: row;
+}
+
+#fictionCards, #nonfictionCards, #hardcoverFictionCards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  flex: 1;
+  border-right: 1px solid rgb(219, 218, 218);
+  margin-right: 26px;
+}
+
+.cardContent {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rankAndImage {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 34px;
+}
+
+img {
+  padding-left: 40px;
+  width: 130px;
+  height: 190px;
+}
+
+.genreCard .cardImage img {
+  width: 160px;
+  height: 240px;
+  padding-left: 20px;
+}
+
+.rankAndImage > h4 {
+  margin-top: -9px;
+  text-align: center; 
+  display: table;
+  font-family: Times, Times New Roman, Georgia, serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(150, 146, 146);
+}
+
+h4, h3 {
+  margin: 0;
+}
+
+.history {
+  color: rgb(102, 99, 99);
+  margin: 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.author {
+  font-weight: 450;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buyButton {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  padding: 0.4375rem 0.75rem;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.buyButton .buyButtonText {
+  visibility: hidden;
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buyButtonText a {
+  color: #326891;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 10px 10px 10px;
+}
+
+.authorButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+select:focus {
+  outline: none;
+}
+
+.buyButton:hover .buyButtonText {
+  visibility: visible;
+}
+
+.genreCard {
+  margin-bottom: 40px;
+}
+
+.genreCardContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  width: 62%;
+  border-bottom:1px solid rgb(219, 218, 218);
+}
+
+.genreCardRank {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.genreCardRank h4 {
+  margin-top: -6px;
+  text-align: center; 
+  font-family: Times, Times New Roman, Georgia, serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(150, 146, 146);
+}
+
+.description {
+  max-width: 90%;
+}
+
+.historyTitleAuthorDescriptionButton {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.historyTitleAuthorDescriptionButton p, .historyTitleAuthorDescriptionButton h3, .historyTitleAuthorDescriptionButton h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.historyTitleAuthorDescriptionButton p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Times, Times New Roman, Georgia, serif;
+  font-size: 22px;
+}
+
+.historyTitleAuthorDescriptionButton {
+  padding-left: 60px;
+}
+
+.authorSeparation {
+  color: rgb(173, 170, 170);
+  font-weight: 300;
+}
+
+.genreTitle {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1250px) {
+  #formBar {
+    flex-direction: column;
+  }
+
+  select, input[type="text"]{
+    width: 70%;
+    box-sizing:border-box;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin-top: 4px;
+    padding-right: 4px;
+  }
+
+  #dateNav {
+    margin-left: -100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #combined-print-and-e-book-fiction {
+    margin-top: 10px;
+  }
+
+  img {
+    padding-left: 0px;
+  }
+
+  .rankAndImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fictionCards, #nonfictionCards, #hardcoverFictionCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 55%;
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid rgb(219, 218, 218);
+    margin-bottom: 80px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .genreCard {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .genreCardContent {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .genreCardContent .cardImage {
+    display: none;
+  }
+
+  .cardContent .rankAndImage .cardImage, .cardContent .history {
+    display: none;
+  }
+
+  .cardContainer {
+    align-items: start;
+  }
+
+  .card {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .title, .rankAndImage {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .cardContent .title, .cardContent .authorButton {
+    padding-left: 40px;
+  }
+
+  .cardContent .title {
+    margin-top: -40px;
+  }
+
+}

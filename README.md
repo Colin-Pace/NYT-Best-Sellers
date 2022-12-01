@@ -1,0 +1,1 @@
+This application offers the ability to view books on lists of the New York Times best sellers. In addition to the display, there are sorting options for genre, and there is a date scroll so that earlier and later lists are available. The application is written in the JavaScript library of React.
